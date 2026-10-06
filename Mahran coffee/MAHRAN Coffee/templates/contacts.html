@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — MAHRAN</title>
+    <link rel="stylesheet" href="/MAHRAN Coffee/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="/MAHRAN Coffee/static/css/images/image-30-09-26-10-27.png" alt="MAHRAN Coffee" class="site-logo">
+                <span>MAHRAN</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+               <a href="/MAHRAN Coffee/templates/index.html">Главная</a>
+                <a href="/MAHRAN Coffee/templates/menu.html">Меню</a>
+                <a href="/MAHRAN Coffee/templates/about.html">О нас</a>
+                <a href="/MAHRAN Coffee/templates/reviews.html">Отзывы</a>
+                <a href="/MAHRAN Coffee/templates/contacts.html">Контакты</a>
+            </div>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2 class="section-title reveal">Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contacts-info reveal">
+                    <div class="contact-item"><h3>Адрес</h3><p>г. Вологда, ул. Ленина, 15</p></div>
+                    <div class="contact-item"><h3>Телефон</h3><p>+7 (8172) 00-00-00</p></div>
+                    <div class="contact-item"><h3>Email</h3><p>hello@mahran.coffee</p></div>
+                    <div class="contact-item"><h3>Часы работы</h3><p>Ежедневно с 8:00 до 22:00</p></div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="form" id="contactForm">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                        <button type="submit" class="btn">Отправить</button>
+                        <div class="form-message" id="contactMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                  <img src="/MAHRAN Coffee/static/css/images/image-30-09-26-10-27.png" alt="MAHRAN Coffee" class="site-logo">
+                <span>MAHRAN</span>
+            </div>
+            <div class="footer-links">
+                <a href="/MAHRAN Coffee/templates/index.html">Главная</a>
+                <a href="/MAHRAN Coffee/templates/menu.html">Меню</a>
+                <a href="/MAHRAN Coffee/templates/about.html">О нас</a>
+                <a href="/MAHRAN Coffee/templates/reviews.html">Отзывы</a>
+                <a href="/MAHRAN Coffee/templates/contacts.html">Контакты</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2026 MAHRAN Coffee.</p>
+                <p>Все права защищены.</p>
+                <!-- <p>Первая кофейня открылась в Вологде</p> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="/MAHRAN Coffee/static/css/js/main.js"></script>
+</body>
+</html>

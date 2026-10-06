@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню — MAHRAN</title>
+    <link rel="stylesheet" href="/MAHRAN Coffee/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="/MAHRAN Coffee/static/css/images/image-30-09-26-10-27.png" alt="MAHRAN Coffee" class="site-logo">
+                
+                <span>MAHRAN</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+              <a href="/MAHRAN Coffee/templates/index.html">Главная</a>
+                <a href="/MAHRAN Coffee/templates/menu.html">Меню</a>
+                <a href="/MAHRAN Coffee/templates/about.html">О нас</a>
+                <a href="/MAHRAN Coffee/templates/reviews.html">Отзывы</a>
+                <a href="/MAHRAN Coffee/templates/contacts.html">Контакты</a>
+            </div>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2 class="section-title reveal">Меню</h2>
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="coffee">Кофе</button>
+                <button class="filter-btn" data-category="cold">Холодные</button>
+                <button class="filter-btn" data-category="desserts">Десерты</button>
+            </div>
+            <div class="cards-grid" id="menuGrid">
+                <!-- КОФЕ (8) -->
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/espresso.png" alt="Эспрессо" class="card-img">             
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #3e2723, #6d4c41);"></div> -->
+                    <h3>Эспрессо</h3><p>Крепкий, насыщенный, 30 мл</p>
+                    <div class="card-footer"><span class="price">180 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Эспрессо" data-price="180" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/amerikano.png" alt="Американо" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #4e342e, #795548);"></div> -->
+                    <h3>Американо</h3><p>Мягкий, с ореховыми нотами</p>
+                    <div class="card-footer"><span class="price">200 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Американо" data-price="200" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/kapuchino.png" alt="Капучино" class="card-img">
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #5d4037, #8d6e63);"></div> -->
+                    <h3>Капучино</h3><p>Нежная молочная пена, 300 мл</p>
+                    <div class="card-footer"><span class="price">280 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Капучино" data-price="280" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/latte.png" alt="Латте" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #6d4c41, #a1887f);"></div> -->
+                    <h3>Латте</h3><p>Молочный, мягкий, с латте-арт</p>
+                    <div class="card-footer"><span class="price">300 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Латте" data-price="300" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/raf.png" alt="Раф" class="card-img">            
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #4e342e, #6d4c41);"></div> -->
+                    <h3>Раф</h3><p>Сливочный, с натуральной ванилью</p>
+                    <div class="card-footer"><span class="price">320 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Раф" data-price="320" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/flat-u.png" alt="Флэт уайт" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #3e2723, #5d4037);"></div> -->
+                    <h3>Флэт уайт</h3><p>Двойной эспрессо, тонкая пена</p>
+                    <div class="card-footer"><span class="price">290 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Флэт уайт" data-price="290" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/mokko.png" alt="Мокко" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #4e342e, #8d6e63);"></div> -->
+                    <h3>Мокко</h3><p>Шоколад и кофе — идеальная пара</p>
+                    <div class="card-footer"><span class="price">330 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Мокко" data-price="330" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card coffee reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/doppio.png" alt="Доппио" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #3e2723, #4e342e);"></div> -->
+                    <h3>Доппио</h3><p>Двойной эспрессо, 60 мл</p>
+                    <div class="card-footer"><span class="price">240 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Доппио" data-price="240" data-type="coffee">Заказать</button></div>
+                </article>
+
+                <!-- ХОЛОДНЫЕ (8) -->
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/is-latte.png" alt="Айс латте" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #004d40, #00695c);"></div> -->
+                    <h3>Айс латте</h3><p>Лёд, молоко, эспрессо — освежает</p>
+                    <div class="card-footer"><span class="price">300 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Айс латте" data-price="300" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images/coldb.png" alt="Колд брю" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #01579b, #0277bd);"></div> -->
+                    <h3>Колд брю</h3><p>12 часов настаивания, мягкий вкус</p>
+                    <div class="card-footer"><span class="price">320 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Колд брю" data-price="320" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Фраппе" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #006064, #00838f);"></div> -->
+                    <h3>Фраппе</h3><p>Взбитый лёд с кофе и сливками</p>
+                    <div class="card-footer"><span class="price">340 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Фраппе" data-price="340" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images    " alt="Айс капучино" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #004d40, #00695c);"></div> -->
+                    <h3>Айс капучино</h3><p>Холодная пена, тёплое настроение</p>
+                    <div class="card-footer"><span class="price">310 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Айс капучино" data-price="310" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images    " alt="Лимонад" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #e65100, #f57c00);"></div> -->
+                    <h3>Лимонад</h3><p>Свежие цитрусы, мята, лёд</p>
+                    <div class="card-footer"><span class="price">250 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Лимонад" data-price="250" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Холодный чай" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #1b5e20, #43a047);"></div> -->
+                    <h3>Холодный чай</h3><p>Чёрный чай, персик, лёд</p>
+                    <div class="card-footer"><span class="price">220 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Холодный чай" data-price="220" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images    " alt="Молочный коктейль" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #4527a0, #7b1fa2);"></div> -->
+                    <h3>Молочный коктейль</h3><p>Сливочное мороженое, сироп на выбор</p>
+                    <div class="card-footer"><span class="price">350 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Молочный коктейль" data-price="350" data-type="cold">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card cold reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Раф со льдом" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #4e342e, #6d4c41);"></div> -->
+                    <h3>Раф со льдом</h3><p>Любимый раф, но холодный</p>
+                    <div class="card-footer"><span class="price">360 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Раф со льдом" data-price="360" data-type="cold">Заказать</button></div>
+                </article>
+
+                <!-- ДЕСЕРТЫ (8) -->
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Чизкейк" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #d4a373, #faedcd);"></div> -->
+                    <h3>Чизкейк</h3><p>Классический нью-йорк, с ягодами</p>
+                    <div class="card-footer"><span class="price">350 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Чизкейк" data-price="350" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Тирамису" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #8d6e63, #bcaaa4);"></div> -->
+                    <h3>Тирамису</h3><p>Маскарпоне, кофе, какао</p>
+                    <div class="card-footer"><span class="price">380 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Тирамису" data-price="380" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Круассан" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #ffe0b2, #fff3e0);"></div> -->
+                    <h3>Круассан</h3><p>С маслом, хрустящий снаружи</p>
+                    <div class="card-footer"><span class="price">180 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Круассан" data-price="180" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images    " alt="Медовик" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #ffa000, #ffc107);"></div> -->
+                    <h3>Медовик</h3><p>Тонкие коржи, нежный крем</p>
+                    <div class="card-footer"><span class="price">300 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Медовик" data-price="300" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Эклер" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #6d4c41, #a1887f);"></div> -->
+                    <h3>Эклер</h3><p>Заварное тесто, шоколадная глазурь</p>
+                    <div class="card-footer"><span class="price">200 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Эклер" data-price="200" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Брауни" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #3e2723, #5d4037);"></div> -->
+                    <h3>Брауни</h3><p>Тёмный шоколад, влажный центр</p>
+                    <div class="card-footer"><span class="price">320 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Брауни" data-price="320" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Морковный торт" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #ff7043, #ffab91);"></div> -->
+                    <h3>Морковный торт</h3><p>Пряный, со сливочным кремом</p>
+                    <div class="card-footer"><span class="price">290 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Морковный торт" data-price="290" data-type="desserts">Заказать</button></div>
+                </article>
+
+                <article class="card menu-card desserts reveal">
+                    <img src="/MAHRAN Coffee/static/css/images   " alt="Панкейки" class="card-img">
+                    
+                    <!-- <div class="card-img" style="background: linear-gradient(135deg, #ffe082, #fff59d);"></div> -->
+                    <h3>Панкейки</h3><p>Пышные, с кленовым сиропом</p>
+                    <div class="card-footer"><span class="price">340 &#8381;</span>
+                    <button class="btn-small order-btn" data-name="Панкейки" data-price="340" data-type="desserts">Заказать</button></div>
+                </article>
+            </div>
+        </section>
+
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Кастомизация</h3>
+                    <button class="modal-close" id="modalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-group" id="shotsGroup">
+                        <label>Количество шотов</label>
+                        <div class="option-buttons">
+                            <button class="option-btn" data-shots="1">1</button>
+                            <button class="option-btn active" data-shots="2">2</button>
+                            <button class="option-btn" data-shots="3">3</button>
+                        </div>
+                    </div>
+                    <div class="modal-group" id="roastGroup">
+                        <label>Обжарка</label>
+                        <div class="option-buttons">
+                            <button class="option-btn active" data-roast="light">Светлая</button>
+                            <button class="option-btn" data-roast="medium">Средняя</button>
+                            <button class="option-btn" data-roast="dark">Тёмная</button>
+                        </div>
+                    </div>
+                    <div class="modal-group" id="syrupGroup">
+                        <label>Сироп</label>
+                        <div class="option-buttons">
+                            <button class="option-btn active" data-syrup="none">Без сиропа</button>
+                            <button class="option-btn" data-syrup="vanilla">Ваниль</button>
+                            <button class="option-btn" data-syrup="caramel">Карамель</button>
+                            <button class="option-btn" data-syrup="chocolate">Шоколад</button>
+                            <button class="option-btn" data-syrup="hazelnut">Лесной орех</button>
+                            <button class="option-btn" data-syrup="cinnamon">Корица</button>
+                        </div>
+                    </div>
+                    <div class="modal-group" id="milkGroup">
+                        <label>Молоко</label>
+                        <div class="option-buttons">
+                            <button class="option-btn active" data-milk="regular">Обычное</button>
+                            <button class="option-btn" data-milk="oat">Овсяное</button>
+                            <button class="option-btn" data-milk="almond">Миндальное</button>
+                            <button class="option-btn" data-milk="coconut">Кокосовое</button>
+                        </div>
+                    </div>
+                    <div class="modal-group" id="foamGroup">
+                        <label>Пенка</label>
+                        <div class="option-buttons">
+                            <button class="option-btn active" data-foam="yes">Да</button>
+                            <button class="option-btn" data-foam="no">Нет</button>
+                        </div>
+                    </div>
+                    <div class="modal-group" id="sizeGroup">
+                        <label>Размер</label>
+                        <div class="option-buttons">
+                            <button class="option-btn active" data-size="S">S</button>
+                            <button class="option-btn" data-size="M">M (+40 &#8381;)</button>
+                            <button class="option-btn" data-size="L">L (+80 &#8381;)</button>
+                        </div>
+                    </div>
+                    <div class="modal-total">
+                        <span>Итого:</span>
+                        <span class="total-price" id="totalPrice">0 &#8381;</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" id="confirmOrder">Подтвердить заказ</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+               <img src="/MAHRAN Coffee/static/css/images/image-30-09-26-10-27.png" alt="MAHRAN Coffee" class="site-logo">
+        
+                <span>MAHRAN</span>
+            </div>
+            <div class="footer-links">
+               <a href="/MAHRAN Coffee/templates/index.html">Главная</a>
+                <a href="/MAHRAN Coffee/templates/menu.html">Меню</a>
+                <a href="/MAHRAN Coffee/templates/about.html">О нас</a>
+                <a href="/MAHRAN Coffee/templates/reviews.html">Отзывы</a>
+                <a href="/MAHRAN Coffee/templates/contacts.html">Контакты</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2026 MAHRAN Coffee.</p>
+                <p>Все права защищены.</p>
+                <!-- <p>Первая кофейня открылась в Вологде</p> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="/MAHRAN Coffee/static/css/js/main.js"></script>
+</body>
+</html>

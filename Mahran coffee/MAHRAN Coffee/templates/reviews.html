@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы — MAHRAN</title>
+    <link rel="stylesheet" href="/MAHRAN Coffee/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="/MAHRAN Coffee/static/css/images/image-30-09-26-10-27.png" alt="MAHRAN Coffee" class="site-logo">
+                <span>MAHRAN</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="/MAHRAN Coffee/templates/index.html">Главная</a>
+                <a href="/MAHRAN Coffee/templates/menu.html">Меню</a>
+                <a href="/MAHRAN Coffee/templates/about.html">О нас</a>
+                <a href="/MAHRAN Coffee/templates/reviews.html">Отзывы</a>
+                <a href="/MAHRAN Coffee/templates/contacts.html">Контакты</a>
+            </div>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2 class="section-title reveal">Отзывы наших гостей</h2>
+            <div class="cards-grid" id="reviewsGrid">
+                <div class="card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>Лучший раф в городе! Атмосфера просто огонь.</p>
+                    <span class="review-author">Анна, Вологда</span>
+                </div>
+                <div class="card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>Каждое утро беру тут капучино. Обжарка — то, что надо.</p>
+                    <span class="review-author">Дмитрий, Москва</span>
+                </div>
+                <div class="card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>Очень вкусный чизкейк, но в обед бывают очереди.</p>
+                    <span class="review-author">Мария, Ярославль</span>
+                </div>
+                <div class="card reveal">
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>Колд брю — бомба! Захожу после работы каждый раз.</p>
+                    <span class="review-author">Игорь, Казань</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-dark">
+            <h2 class="section-title reveal">Оставить отзыв</h2>
+            <form class="form reveal" id="reviewForm">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="text" name="city" placeholder="Город" required>
+                </div>
+                <div class="form-row">
+                    <label>Оценка</label>
+                    <div class="rating-stars" id="ratingStars">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star active" data-rating="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" name="rating" id="ratingInput" value="5">
+                </div>
+                <textarea name="text" placeholder="Расскажите о своём опыте" required></textarea>
+                <button type="submit" class="btn">Отправить отзыв</button>
+                <div class="form-message" id="reviewMessage"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+               <img src="/MAHRAN Coffee/static/css/images/image-30-09-26-10-27.png" alt="MAHRAN Coffee" class="site-logo">
+                <span>MAHRAN</span>
+            
+            </div>
+            <div class="footer-links">
+                <a href="/MAHRAN Coffee/templates/index.html">Главная</a>
+                <a href="/MAHRAN Coffee/templates/menu.html">Меню</a>
+                <a href="/MAHRAN Coffee/templates/about.html">О нас</a>
+                <a href="/MAHRAN Coffee/templates/reviews.html">Отзывы</a>
+                <a href="/MAHRAN Coffee/templates/contacts.html">Контакты</a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2026 MAHRAN Coffee.</p>
+                <p>Все права защищены.</p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/MAHRAN Coffee/static/css/js/main.js"></script>
+</body>
+</html>
